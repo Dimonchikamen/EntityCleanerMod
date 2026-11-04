@@ -1,0 +1,34 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+modId="lagsweep"
+version="1.0.0"
+displayName="LagSweep - Item Cleaner"
+description='''
+Периодическая очистка валяющихся на земле предметов (по умолчанию каждые 10 минут,
+интервал настраивается в config/lagsweep.toml).
+
+- Предупреждения в чат за 2 и 1 минуту до очистки + обратный отсчет 5-4-3-2-1 секунд.
+- Whitelist: конкретные предметы (id), теги (#tag), целые моды (namespace).
+- Совместимость со сборкой MineColonies/Lootr/Sophisticated Backpacks/Farmer's Delight/
+  Iron's Spells/Artifacts/Relics и др.: защищённые сущности НЕ удаляются.
+- Опция keepPersistent: предметы, помеченные игроком (P/N), не удаляются.
+'''
+authors="LagSweep"
+logoFile="logo.png"
+
+[[dependencies.lagsweep]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.262,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.lagsweep]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
